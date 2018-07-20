@@ -10,19 +10,19 @@ def report(list=purchases, stocks=stock_dict):
 	for stock in list:
 		name = stocks[stock[0]]
 		value = "$" + str(stock[1] * stock[3])
-		value_report.append({name, value})
-	return value_report
+		lump_sum.append({name, value})
+	return lump_sum
 
 def report_by_ticker(list=purchases, stocks=stock_dict):
 	stock_names = {}
 	for stock in list:
 		name = stocks[stock[0]]
 		value = stock[1]
-		if name in tickers.keys():
-			value += tickers[name]
+		if name in stock_names.keys():
+			value += stock_names[name]
 			print(value)
-		tickers.update({name: value})
-	return tickers
+		stock_names.update({name: value})
+	return stock_names
 
 print(report())
 print(report_by_ticker())
