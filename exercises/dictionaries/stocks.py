@@ -24,5 +24,5 @@ def names_stocks(list=purchases, stocks=stock_dict):
 		stock_names.update({name: value})
 	return stock_names
 
-print(lump_sum())
-print(stock_names())
+print(total_purchase())
+print(names_stocks())
