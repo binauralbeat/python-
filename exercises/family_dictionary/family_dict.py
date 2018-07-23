@@ -12,5 +12,5 @@ sister = my_family.get("sister")
 sister_age = sister.get("age")
 sister_name = sister.get("name")
 
-# print (my_family["sister"])
-print (sister_age)
+
+print ((sister_name) + " is my sister and is " + str(sister_age) + " years old")
