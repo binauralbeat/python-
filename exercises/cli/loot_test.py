@@ -12,13 +12,13 @@ class Loot_test(unittest.TestCase):
 
     def test_can_get_loot(self):
         result = 'dog'
-        result_2 = Loot_bag.list_loot(self, "Rob")
+        result_2 = Loot_bag.list_loot
 
         self.assertIn(result, result_2)
 
     def test_can_remove_loot(self):
-        result = 'no loot'
-        result_2 = Loot_bag.remove_loot(self, "Rob")
+        result = []
+        result_2 = Loot_bag.loot.remove_loot
 
 
 
