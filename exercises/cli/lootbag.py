@@ -1,17 +1,22 @@
 class Loot_bag():
 
+    def __init__(self):
+        self.loot_list = dict()
 
 
     def add_loot(self, name, loot):
         result = f'{name} gets a {loot}'
+        loot_list.append.result
         return result
     def list_loot(self, name):
         return ["dog"]
+    def remove_loot(self, name):
+        return ('no loot')
 
 
-kid_1 = Loot_bag("Jerry", "wizard")
+# kid_1 = Loot_bag("Jerry", "wizard")
 
-print(kid_1)
+# print(kid_1)
 
 # def add_loot(name, loot):
 #     for i in loot_bag:
