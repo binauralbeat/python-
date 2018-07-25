@@ -2,30 +2,24 @@ import unittest
 import sys
 from lootbag import Loot_bag
 
+class Loot_test(unittest.TestCase):
+    def test_add_loot_exists(self):
+        result = Loot_bag.add_loot(self,"tommy", "whistle")
+        self.assertEqual(result, "tommy gets a whistle")
 
-class Kids:
-    def _init_(self, name):
-        self.name = name
+    def test_can_get_loot(self):
+        result = 'dog'
+        result_2 = self.Loot_bag.list_loot()
 
-        self.loot = set()
-class Loot:
-    def _init_(self, loot):
-        self.loot = Loot
 
-        self.kids = set()
 
-if _name_ == '_main_':
-    kite = Loot()
-    frisbee = Loot()
-    dog = Loot()
 
-    wilbur = Kids(Wilbur)
-    joyce = Kids(Joyce)
-    hampton = Kids(Hampton)
 
-    kite.kids.add(wilbur)
 
-    print(Loot)
+if __name__ == '__main__':
+    unittest.main()
+
+
 
 
 
