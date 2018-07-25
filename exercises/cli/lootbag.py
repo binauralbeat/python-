@@ -1,12 +1,11 @@
 class Loot_bag():
 
     def __init__(self):
-        self.loot_list = dict()
+        self.directory = dict()
 
 
     def add_loot(self, name, loot):
         result = f'{name} gets a {loot}'
-        loot_list.append.result
         return result
     def list_loot(self, name):
         return ["dog"]
